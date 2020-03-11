@@ -17,6 +17,7 @@
 #endif // _WIN32
 
 extern bool print_debug_info;
+extern int global_log_level;
 
 typedef std::lock_guard<std::mutex> guarded_mutex;
 std::mutex cache_rw_lock;
@@ -47,7 +48,7 @@ static int writer(char *data, size_t size, size_t nmemb, std::string *writerData
 static inline void curl_set_common_options(CURL *curl_handle, const char *url)
 {
     curl_easy_setopt(curl_handle, CURLOPT_URL, url);
-    curl_easy_setopt(curl_handle, CURLOPT_VERBOSE, print_debug_info ? 1L : 0L);
+    curl_easy_setopt(curl_handle, CURLOPT_VERBOSE, global_log_level == LOG_LEVEL_VERBOSE ? 1L : 0L);
     curl_easy_setopt(curl_handle, CURLOPT_NOPROGRESS, 1L);
     curl_easy_setopt(curl_handle, CURLOPT_NOSIGNAL, 1L);
     curl_easy_setopt(curl_handle, CURLOPT_FOLLOWLOCATION, 1L);
@@ -203,6 +204,11 @@ int curlPost(std::string url, std::string data, std::string proxy, std::string a
     return retVal;
 }
 
+int webPost(std::string url, std::string data, std::string proxy, std::string auth_token, std::string *retData)
+{
+    return curlPost(url, data, proxy, auth_token, retData);
+}
+
 int curlPatch(std::string url, std::string data, std::string proxy, std::string auth_token, std::string *retData)
 {
     CURL *curl_handle;
@@ -239,4 +245,9 @@ int curlPatch(std::string url, std::string data, std::string proxy, std::string 
     curl_easy_cleanup(curl_handle);
 
     return retVal;
+}
+
+int webPatch(std::string url, std::string data, std::string proxy, std::string auth_token, std::string *retData)
+{
+    return curlPatch(url, data, proxy, auth_token, retData);
 }
