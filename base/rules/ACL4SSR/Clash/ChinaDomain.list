@@ -339,6 +339,7 @@ DOMAIN-SUFFIX,zmzapi.net
 DOMAIN-SUFFIX,zmzfile.com
 
 # Private Tracker
+DOMAIN-SUFFIX,animetorrents.me
 DOMAIN-SUFFIX,awesome-hd.me
 DOMAIN-SUFFIX,beitai.pt
 DOMAIN-SUFFIX,bittorrent.com
@@ -347,9 +348,12 @@ DOMAIN-SUFFIX,chdbits.co
 DOMAIN-SUFFIX,classix-unlimited.co.uk
 DOMAIN-SUFFIX,empornium.me
 DOMAIN-SUFFIX,gazellegames.net
+DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,hdchina.org
+DOMAIN-SUFFIX,hdhome.org
 DOMAIN-SUFFIX,hdsky.me
 DOMAIN-SUFFIX,hdtime.org
+DOMAIN-SUFFIX,hdzone.me
 DOMAIN-SUFFIX,icetorrent.org
 DOMAIN-SUFFIX,jpopsuki.eu
 DOMAIN-SUFFIX,keepfrds.com
@@ -462,7 +466,6 @@ DOMAIN-SUFFIX,fantasy.tv
 DOMAIN-SUFFIX,feng.com
 DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,fir.im
-DOMAIN-SUFFIX,firefox.com
 DOMAIN-SUFFIX,frdic.com
 DOMAIN-SUFFIX,fresh-ideas.cc
 DOMAIN-SUFFIX,ganji.com
@@ -530,11 +533,11 @@ DOMAIN-SUFFIX,mogucdn.com
 DOMAIN-SUFFIX,mogujie.com
 DOMAIN-SUFFIX,moji.com
 DOMAIN-SUFFIX,moke.com
-DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,mubu.com
 DOMAIN-SUFFIX,myunlu.com
 DOMAIN-SUFFIX,nruan.com
 DOMAIN-SUFFIX,nuomi.com
+DOMAIN-SUFFIX,onedns.net
 DOMAIN-SUFFIX,onlinedown.net
 DOMAIN-SUFFIX,oracle.com
 DOMAIN-SUFFIX,oschina.net
